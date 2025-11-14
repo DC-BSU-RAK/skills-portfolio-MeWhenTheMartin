@@ -26,14 +26,14 @@ def check_answer():
     if user_answer.isdigit() and int(user_answer) == answer:
         result_label.config(text="Correct!", fg="green")
 
-        counter = counter + 1
-        questions = questions + 1
+        counter += 1
+        questions += 1
+        print(counter)
         counter_display.config(text=f"Count: {counter}/{questions}")
     else:
         result_label.config(text=f"Wrong! Answer: {answer}", fg="red")
-        result_label.config(text=f"Count: {counter}")
 
-        questions = questions + 1
+
         counter_display.config(text=f"Count: {counter}/{questions}")
 
     entry.delete(0, tk.END)
