@@ -46,10 +46,10 @@ root.geometry("500x200")
 ohhi = tk.Label(root, text="The Jokenator 3000 Prototype")
 ohhi.pack()
 
-joke_label = tk.Label(root, text="",)
+joke_label = tk.Label(root, text="", font=("Arial", 10))
 joke_label.pack()
 
-punch_label = tk.Label(root, text="",)
+punch_label = tk.Label(root, text="", font=("Arial", 15))
 punch_label.pack()
 
 tk_button = tk.Button(root, text="Tell me a joke.", command=get_joke)
