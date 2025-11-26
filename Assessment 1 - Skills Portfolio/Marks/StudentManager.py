@@ -41,4 +41,12 @@ studentPage(2)
     
 
 # Main Window
-from tkinter import * 
+
+from tkinter import *
+import tkinter as tk
+
+root = tk.Tk()
+root.title("Student Manager")
+root.geometry("500x200")
+
+root.mainloop()

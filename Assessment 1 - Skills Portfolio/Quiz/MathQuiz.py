@@ -77,6 +77,12 @@ def get_diff():
 
     difficulty_button.config(text=f"{diff_name}")
     entry.delete(0, tk.END) # clear the user's input
+    global counter 
+    global questions
+    counter = 0
+    questions = 0
+    counter_display.config(text=f"Count: {counter}/{questions}")
+    result_label.config(text=f"")
     generate_question()
 
     print(f"{diff}")
